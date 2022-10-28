@@ -1,0 +1,169 @@
+
+
+
+
+/* //////////////// */
+/* body */
+/* //////////////// */
+
+body{
+    /* background-color: black; */
+    text-align: center;
+    max-width: 100%;
+    /* overflow: hidden; */
+}
+
+/* //////////////// */
+/* h1 */
+/* //////////////// */
+h1 {
+    padding: 10px 0 10px;
+    font-size: 30px;
+    background-color:rgba(255,105,212,0.5);
+
+}
+
+
+/* //////////////// */
+/* ジョジョチーム */
+/* //////////////// */
+
+/* 全体 */
+.wrapper_team{
+    position: relative;
+    flex-shrink:0 ;
+    width: 100%;
+}
+
+/* ul */
+.team{     
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* リスト親 */
+.team_list {
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* リスト子(li) */
+.team_item{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+/* テキスト1 */
+.jo_r{
+    font-size: 50px;
+}
+
+/* 画像ホバー */
+.hover_text {
+    font-size: 40px;
+    align-items: center; /* テキストの中央揃え */
+    background: black; /* マスクの色(黒の50%) */
+    bottom: 0;
+    color: #fff; /* テキストの色 */
+    display: flex; /* テキストの中央揃え */
+    height: 100%;
+    justify-content: center; /* テキストの中央揃え */
+    left: 0;
+    opacity: 0; /* 最初は透明(非表示) */
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .6s ease; /* ゆっくりopacityのみへ変化させる */
+    width: 100%;
+  }
+  .hover_text:hover {
+    opacity: .7; /* hoverしたら透過しない(表示させる) */
+  }
+  .hover_text p {
+    width: 100%; /* テキストを横幅いっぱいにならないようにする */
+  }
+
+
+.battle_wrapper{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+body {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+
+
+
+  
+  body {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  /* ポップアップ */
+  .popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+  }
+  .popup.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .popup-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .popup-inner img {
+    width: 100%;
+  }
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .bg-black {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    cursor: pointer;
+  }

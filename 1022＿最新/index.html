@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クールに去るぜ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>あなた…『覚悟してきてる人』…ですよね</h1>
+    <p class="detail_text">
+    </p>
+
+    
+
+
+<div class="display_none">
+
+    <!-- チーム画像の表示 -->
+    <div class="wrapper_team">
+        <ul id="team" class="team">
+            <div class="team_list">
+                <li id="jorno" class="team_item">
+                    <img onclick="jojo_battle(0);" src="img/team0.png" alt="ジョルノ">
+                    <p onclick="jojo_battle(0);" class="hover_text">ジョルノ</p>
+                </li>
+            </div>
+            <div class="team_list">
+                <li id="bruno" class="team_item">
+                    <img onclick="jojo_battle(1);" src="img/team1.png" alt="ブチャラティ">
+                    <p onclick="jojo_battle(1);" class="hover_text">ブチャラティ</p>
+                </li>
+            </div>
+            <div class="team_list">
+                <li id="narancia" class="team_item">
+                    <img onclick="jojo_battle(2);" src="img/team2.png" alt="ナランチャ">
+                    <p onclick="jojo_battle(2);" class="hover_text">ナランチャ</p>
+                </li>
+            </div>
+            <div class="team_list">
+                <li id="mista" class="team_item">
+                    <img onclick="jojo_battle(3);" src="img/team3.png" alt="ミスタ">
+                    <p onclick="jojo_battle(3);" class="hover_text">ミスタ</p>
+                </li>
+            </div>
+            <div class="team_list">
+                <li id="abbacchio" class="team_item">
+                    <img onclick="jojo_battle(4);" src="img/team4.png" alt="アバッキオ">
+                    <p onclick="jojo_battle(4);" class="hover_text">アバッキオ</p>
+                </li>
+            </div>
+        </ul>
+ 
+    <!-- チーム画像の表示ここまで -->
+    <br>
+
+    <!-- バトル画像 -->
+    <div class="battle_wrapper">
+        <p><img id="team_r" src="img/jojo_loading.jpeg" alt=""></p>
+        <div id="popup" class="popup">
+            <div class="popup-inner">
+              <div id="close-btn" class="close-btn">✖</div>
+              <div class="img"><img id="vsImg" src="img/vs.png" alt="ポップアップ画像"></div>
+            </div><!-- .popup-inner -->
+            <div id="bg-black" class="bg-black"></div>
+          </div><!-- #popup -->
+          <div id="show-btn" class="btn btn-primary"><p><img id="vs" class="vs" onclick="vs_r();" src="img/vslogo.png" alt="VSロゴ"></p></div>
+          <script src="js/test.js"></script>        
+        <p><img id="enemy_r" class="enemy_r" src="img/enemy.png" alt=""></p>
+    </div>
+
+</div>
+
+    
+
+    <p><div id="jo_r" class="jo_r"></div></p>
+    <div id="enemy"></div>
+    <div id="battle"></div>
+
+    <br>
+
+
+
+<!-- リセットボタン -->
+<p><button id="reset" type="button"  onclick="reset()">ザ・ワールド</button></p>
+
+<!-- <video controls src="mov/test.mp4"></video> -->
+
+<!-- <label class="open" for="pop-up">ポップアップを表示する</label>
+<input type="checkbox" id="pop-up">
+<div class="overlay">
+	<div class="window">
+		<label class="close" for="pop-up">×</label>
+		<p class="text">ポップアップの中身が入ります</p>
+	</div>
+</div> -->
+ 
+    
+<script src ="js/test.js"></script>
+</body>
+
+
+</html>
